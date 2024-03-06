@@ -3,7 +3,7 @@ import requests
 
 def fetch_script_url(key):
     try:
-        response = requests.get("https://hubpreview.nl/pythonhoster/index.php", params={"key": key})
+        response = requests.get("##WEBSITEURL##/pythonhoster/index.php", params={"key": key})
         if response.status_code == 200:
             return response.text.strip()  # Return fetched script URL
         else:
@@ -25,7 +25,7 @@ def fetch_and_execute_script(url):
         print("Error:", e)
 
 def main():
-    key = "DCM"  # Replace this with the key you expect
+    key = "DCM"  # The selected script
     script_url = fetch_script_url(key)
     if script_url:
         fetch_and_execute_script(script_url)
