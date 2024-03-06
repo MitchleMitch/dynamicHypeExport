@@ -2,7 +2,7 @@
 
 // Define key-value mappings for scripts
 $scriptMappings = array(
-    "DCM" => "https://hubpreview.nl/pythonhoster/scripts/DCM.py",
+    "DCM" => "##WEBSITE##/pythonhoster/scripts/DCM.py",
     // Add more key-value mappings as needed
 );
 
